@@ -4,7 +4,7 @@ Para esta entrega, você continuará prototipando um layout de uma plataforma de
 
 ## Visão Geral
 
-Para começar, acesse [este link](https://classroom.github.com/a/cTZKsvZA) e clone o repositório em sua máquina. . Depois preencha o arquivo style.css de acordo com o que se pede.
+Para começar, acesse [este link] e clone o repositório em sua máquina. . Depois preencha o arquivo style.css de acordo com o que se pede.
 
 ### Dicas de propriedades
 
@@ -33,7 +33,3 @@ Você pode utilizar uma ferramenta **Device mode** disponível em seu navegador 
 ## _Dica_
 
 **_Lembre de utilizar um arquivo reset. Ou então, se preferir, você pode apenas zerar as principais propriedades: `margin`, `padding`, e adicionar um `box-sizing` para que os elementos não ultrapassem os limites_**
-
-### Envio
-
-Faça o push do código para o seu repositório GitHub, altere a visibilidade do repositório para internal e implemente-o GitHub pages. No Canvas, por favor, envie sua url do GitHub Pages: (ex:https://nomerandomico.pages.github.io/...nos comentários. Atenção, seu repositório deverá ser compartilhado apenas com a organização. (Internal)
