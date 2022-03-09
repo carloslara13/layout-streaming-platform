@@ -1,0 +1,191 @@
+/*
+Theme Name: KenzieFlix
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/* VARIÁVEIS */
+:root{
+  --colorbackground: #00002E;
+  --widthcontentbox: 858px;
+  --widtheachbox: 186px;
+}
+
+/*BODY*/
+	body{
+		background-color: var(--colorbackground);
+		font-family: Arial, Helvetica, sans-serif;
+		display: flex;
+		box-sizing: border-box;
+		color: whitesmoke;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+	}
+
+/*TOPO*/
+	header.topo{
+		display: inline-flex;
+		box-sizing: border-box;
+		border: 1px solid transparent;
+		max-width: 300px;
+		max-height: 80px;
+		width: auto;
+		height: auto;
+		align-items: center;
+		object-fit: fill;
+	}
+	header.topo figure img{
+		box-sizing: border-box;
+		max-width: 300px;
+		max-height: 80px;
+		width: auto;
+		height: auto;
+		align-items: center;
+	}
+	header.topo figure img:hover{
+		filter: drop-shadow(1px 1px 1px whitesmoke);
+	}
+	
+
+/*RODAPÉ*/
+	footer{ 
+		border: 1px outset white;
+		background-color: #00002E;
+		box-sizing: border-box;
+		display: inline-flex;
+		max-width: fit-content;
+		max-height: fit-content;
+		width: 150px;
+		height: 60px;
+		align-self: center;
+		margin-top: 50px;
+		margin-left: 340px;
+		box-shadow: none;
+	}
+	footer button{
+		display: inline-flex;		
+		background-color: #00002E;
+		color: whitesmoke;
+		font-size: 18px;
+		align-items: center;
+		border-color: transparent;
+	}
+	footer button:hover{
+		border-color: white;
+		text-shadow: 0.5px 0.5px white;
+	}
+
+/*PÁGINA INICIAL*/
+	div.pg-home{
+		box-sizing: border-box;
+		display: inline-flex;
+		align-items: stretch;
+		align-self: center;
+		justify-content: center;
+		max-width: var(--widthcontentbox);
+		border-width: 1px;
+		border-style: solid;
+		border-color: transparent;
+	}
+	ul{
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: row;
+		list-style-type: none;
+		flex-wrap: wrap;
+		width: var(--widthcontentbox);
+		border: 0px solid transparent;
+	}
+
+	li{
+		box-sizing: border-box;
+		border: 0px solid transparent;
+		width: var(--widtheachbox);
+		height: 251px;
+		overflow: hidden;
+		object-fit: contain;
+		text-align: center;
+	}
+	
+	li.addPerfil figure{
+		padding-top: 30px;
+		padding-left: 16px;
+		display: inline-flex;
+		align-self: center;
+	}
+	li.addPerfil h3 {
+		margin-top: 37.5px;
+	}
+
+	h2{
+		text-align: center;
+		font-size: 60px;
+		justify-content: center;
+	}
+	h3 {
+		color: whitesmoke;
+		display: inline-flex;
+		align-items: stretch;
+		justify-content: center;
+		font-size: 20px;
+		text-align: center;
+		margin-left: 35px;
+	}
+	h3:hover {
+		text-shadow: 0.5px 0.5px white;
+	}
+	figure img{
+		box-sizing: border-box;
+		max-width: 300px;
+		max-height: 150px;
+		width: auto;
+		height: auto;
+		object-fit: fill;
+		align-items: center;
+		justify-content: center;
+	}
+	figure img:hover{
+		filter: drop-shadow(1px 1px 1px whitesmoke);
+	}
+
+	@media (max-width: 1024px) and (orientation: portrait) {
+		body, header.topo, header.topo figure img{
+			align-items: center;
+			justify-content: stretch;
+			max-width: 100%;
+			height: 100%;
+		}
+		h2{
+			font-size: 30px;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			justify-content: center;
+		}
+		ul{
+			box-sizing: border-box;
+			list-style-type: none;
+			width: 480px;
+			height: 502px;
+			column-count: 2;
+			flex-wrap: wrap;
+		}
+		footer {
+			display: inline-flex;
+			align-self: center;
+			justify-content: center;
+			margin-left: 37.5%;
+		}
+
+	}
